@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Obligatorio 2023</title>
+</head>
+<body class="fondo">
+<div id="divCerrarSesion">
+    <input type="button" id="btnCerrarSesion" value="Cerrar Sesion" style="float: right;" class="botton4">
+</div>
+    <div class="div" id="divRegistroUsuario">
+        <div class="titulo">
+            Registro de Usuario
+        </div>
+        <div class="fila">
+            <table class="izquierda">
+                <tr>
+                    <td>Nombre:</td>
+                </tr>
+                    <tr>
+                        <td class="error"><br></td>
+                    </tr>
+                <tr>
+                    <td>Apellido:</td>
+                </tr>
+                    <tr>
+                        <td class="error"><br></td>
+                    </tr>
+                <tr>
+                    <td>Nombre de Usuario:</td>
+                </tr>
+                    <tr>
+                        <td class="error"><br></td>
+                    </tr>
+                <tr>
+                    <td>Contraseña: </td>
+                </tr>
+                    <tr>
+                        <td class="error"><br></td>
+                    </tr>
+                <tr>
+                    <td>Tarjeta:</td>
+                </tr>
+                    <tr>
+                        <td class="error"><br></td>
+                    </tr>
+                <tr>
+                    <td>CVC:</td>
+                </tr>
+                    <tr>
+                        <td class="error"><br></td>
+                    </tr>
+                <tr>
+                    <td><input type="button" value="Volver" id="btnVolverLogin" class="botton2"></td>
+                </tr>
+            </table>
+            <table class="derecha">
+                <tr>
+                    <td><input type="text" placeholder="Ingrese Nombre" id="txtNombre" class="textbox"></td>
+                </tr>
+                    <tr>
+                        <td class="error" id="msgENombre"><br></td>
+                    </tr>
+                <tr>
+                    <td><input type="text" placeholder="Ingrese Apellido" id="txtApellido" class="textbox"></td>
+                </tr>
+                    <tr>
+                        <td class="error" id="msgEApellido"><br></td>
+                    </tr>
+                <tr>
+                    <td><input type="text" placeholder="Ingrese Nombre de Usuario" id="txtNomUsuario" class="textbox"></td>
+                </tr>
+                    <tr>
+                        <td class="error" id="msgENomUsuario"><br></td>
+                    </tr>
+                <tr>
+                    <td><input type="text" placeholder="Ingrese una Contraseña" id="txtPassword" class="textbox"> </td>
+                </tr>
+                    <tr>
+                        <td class="error" id="msgEPassword"><br></td>
+                    </tr>
+                <tr>
+                    <td><input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" id="txtTarjeta" class="textbox"></td>
+                </tr>
+                    <tr>
+                        <td class="error" id="msgETarjeta"><br></td>
+                    </tr>
+                <tr>
+                    <td> <input type="text" placeholder="XXX" id="txtCVC" class="textbox"></td>
+                </tr>
+                    <tr>
+                        <td class="error" id="msgECVC"><br></td>
+                    </tr>
+                <tr>   
+                    <td><input type="button" value="  Registrarse  " id="btnRegistrarse" class="botton"></td>
+                </tr>
+            </table>   
+        </div>
+        <div>
+        </div>     
+    </div>
+    
+    <div class="div" id="divLoginUsuario">
+        <div class="titulo">
+            Login
+        </div>
+        <div class="fila">
+            <table class="izquierda">
+                <tr>
+                    <td>Nombre de Usuario:</td>
+                </tr>
+                <tr>
+                    <td class="error"><br></td>
+                </tr>
+                <tr>
+                    <td>Contraseña:</td>
+                </tr>
+                <tr>
+                    <td class="error"><br></td>
+                </tr>
+                <tr>
+                    <td class="error" id="msgEGeneralLogin"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Registrarse" id="btnRegistrarseLogin" class="botton2"></td>
+                </tr>
+            </table>
+            <table class="derecha">
+                <tr>
+                    <td><input type="text" placeholder="Ingrese Nombre de Usuario" id="txtNomUsuarioLogin" class="textbox" value="Mauricio"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="msgENomUsuarioLog"><br></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Ingrese Contraseña" id="txtPasswordLogin" class="textbox" value="Mauricio123"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="msgEPasswordLogin"><br></td>
+                </tr>
+                <tr>
+                    <td class="error"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="botton" id="btnIngresar" value="   Ingresar   "></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="div" id="divMaquinasUsuario">
+        <div class="titulo2">
+            Alquiler de Maquinas Virtuales
+        </div>
+        <div>
+            <p id="msgTablaMaquina"></p>
+        </div>
+        <div>
+            <input type="button" value=" IA`s Activos " id="btnIAActivo" class="botton" style="margin-right: 50px;">
+            <input type="button" value="     Pagos     " id="btnPagos" class="botton" style="margin-left: 50px;">
+        </div> 
+        
+    </div>
+    <div class="div" id="divAlquilerUsuario">
+        <div class="titulo">
+            Listado de Alquileres
+        </div>
+        <div>
+        <p id="msgTablaAlquiler"></p>
+        </div>
+        <div>
+            <input type="button" value=" Volver " id="btnVolver1" class="botton2" style="float: left; margin-left: 35px; margin-top: 0px;">
+        </div>
+    </div>
+    <div class="div" id="divPagosUsuario">
+        <div class="titulo">
+            Pagos
+        </div>
+        <div>
+            <p id="msgTablaPagos"></p>
+        </div>
+        <div>
+            <input type="button" value=" Volver " id="btnVolver2" class="botton2" style="float: left; margin-left: 35px; margin-top: 0px;">
+        </div>
+    </div>
+    <div class="div" id="divMenuAdminUsuarios">
+        <div class="titulo">
+            Usuarios Pendientes
+        </div>
+        <div>
+            <p id="msgTablaUsuPendientes"></p>
+        </div>
+        <div class="titulo">
+            Usuarios Activos
+        </div>
+        <div>
+            <p id="msgTablaUsuActivos"></p>
+        </div>
+        <div>
+            <input type="button" value="   Stock   " id="btnStock" class="botton" style="margin-right: 50px;">
+            <input type="button" value="  Informe IA`s  " id="btnInformes" class="botton" style="margin-left: 50px;">
+        </div>
+    </div>
+    <div class="div" id="divMenuModificarStock">
+        <div class="titulo">
+            Modificar Stock de IA`s
+        </div>
+        <div>
+            <p id="msgTablaStock"></p>
+        </div>
+        <div>
+            <input type="button" value=" Volver " id="btnVolver3" class="botton2" style="float: left; margin-left: 35px; margin-top: 0px;">
+        </div>
+    </div>
+    <div class="div" id="divMenuInformeDeIA">
+        <div class="titulo">
+            Informe de IA`s
+        </div>
+        <div>
+            <p id="msgTablaInformes"></p>
+        </div>
+        <div>
+            <input type="button" value=" Volver " id="btnVolver4" class="botton2" style="float: left; margin-left: 35px; margin-top: 0px;">
+        </div>
+    </div>
+
+    <script src="obligatorio.js"></script>
+</body>
+</html>
